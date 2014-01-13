@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{polski}
+\usepackage[cp1250]{inputenc}
+\usepackage[T1]{fontenc}
+\parindent0em
+\usepackage{graphicx}
+
+\begin{document}
+
+
+Przytoczony przyk³ad sprowadzenia formy kwadratowej do sumy kwadratów opisan¹ metod¹. Niech w trójwymiarowej przestrzeni pewn¹ baz¹ $f_1 ,f_2 ,f_3$ bêdzie dana forma kwadratowa
+$$ A(x;x)=2\eta_1\eta_2+4\eta_1\eta_3-\eta_2^2-8\eta_3^2$$
+Przyjmijmy
+
+\begin{eqnarray*}
+\eta_1
+&=&
+\eta'_2,
+\\
+\eta_2
+&=&
+\eta'_1
+\\
+\eta_3
+&=&
+\eta'_3 .
+\end{eqnarray*}
+
+Wówczas otrzymamy
+
+
+$$ A(x;x)=- \eta_1^2+2\eta_1\eta_2+4\eta_2\eta_3-8\eta_3^2$$
+
+Dalej przyjmuj¹c
+$$\eta_1^*=-\eta'_1+\eta'_2$$
+$$\eta_2^*= \;\;\;\eta'_2$$
+$$\eta_3^*=\;\;\;\;\;\;\eta'_3$$
+otrzymamy nowe wyra¿enie na formê kwadratow¹
+
+$$A(x;x)=-\eta_1^{*2}+\eta_2^{*2}+4\eta_2^*\eta_3^*-8\eta_3^{*2}$$
+Przekszta³cenie
+$$\xi_1=\eta_1^*,$$
+$$\xi_2=\;\;\;\eta_2^*+2\eta_3^*$$
+$$\xi_3=\;\;\;\;\;\; \eta_3^*$$
+wydzieli z naszej formy kwadratowej jeszcze jeden pe³ny kwadrat i forma przyjmie postaæ kanoniczn¹:
+$$A(x;x)=-\xi_1^2+\xi_2^2-12\xi_3^2.$$
+Maj¹c wzory wyra¿aj¹ce $\eta_1^*,\eta_2^*,...,\eta_n^*$ przez $\eta_1,\eta_2,...,\eta_n$, a nastêpnie $\eta_1^{**},\eta_2^{**},...,\eta_n^{**}$ przez $\eta_1^*,\eta_2^*,...,\eta_n^*$ itd. mo¿emy otrzymaæ wyra¿enie wspó³rzêdnych $\xi_1,\xi_2,...,\xi_n$ poprzez wspó³rzêdne pocz¹tkowe $\eta_1,eta_2,...,\eta_n$
+$$\xi_1=c_{11}\eta_1+c_{12}\eta_2+\cdots+c_{1n}\eta_n,$$
+$$\xi_2=c_{21}\eta_1+c_{22}\eta_2+\cdots+c_{2n}\eta_n,$$
+$$...............$$
+$$\xi_1=c_{n1}\eta_1+c_{n2}\eta_2+\cdots+c_{nn}\eta_n.$$
+I tak w przytoczonym przyk³adzie wzory te maj¹ postaæ
+$$\xi_1=\eta_1-\eta_2,$$
+$$\xi_2=\eta_1\;\;\;+2\eta_3,$$
+$$\xi_3=\;\;\;\;\eta_3.$$
+
+
+Przypominaj¹c sobie(\S 1, ustep 7), ¿e macierz daj¹ca przekszta³cenie wspó³rzêdnych jest macierz¹ odwrotn¹ i transponowan¹ wzglêdem przekszta³cenia bazy, mo¿emy wyraziæ wektory nowej bazy $e_1,e_2,...,e_n$ poprzez wektory starej bazy $ f_1,f_2,...,f_n : $
+
+Przypominaj¹c sobie(\S 1, ustep 7), ¿e macierz daj¹ca przekszta³cenie wspó³rzêdnych jest macierz¹ odwrotn¹ i transponowan¹ wzglêdem przekszta³cenia bazy, mo¿emy wyraziæ wektory nowej bazy $e_1,e_2,...,e_n$ poprzez wektory starej bazy $ f_1,f_2,...,f_n : $
+$$e_1=d_{11}f_1+d_{12}f_2+d_{1n}f_n,$$
+$$e_2=d_{21}f_1+d_{22}f_2+d_{2n}f_n,$$
+$$..............................$$
+$$e_1=d_{n1}f_1+d_{n2}f_2+d_{nn}f_n,$$
+Je¿eli w procesie sprawdzenia ani razu nie dokonywaliœmy przekszta³cenia zmieniaj¹cego od razu dwie wspó³rzêdne ( jak widzieliœmy, takiego przekszta³cenia trzeba dokonaæ, gdy w przekszta³conej formie brak jest kwadratów lub wspó³rzêdnych lub je¿eli trzeba zmieniaæ numeracjê), to wzory na przekszta³cenie maj¹ postaæ:
+$$\xi_1=c_{11}\eta_1+c_{12}\eta_2+\ldots+c_{1n}\eta_n,$$
+$$\xi_1= \;\;\; c_{22}\eta_2+\ldots+c_{2n}\eta_n,$$
+$$...........................$$
+$$\xi_1= \;\;\;\;\; c_{nn}\eta_n,$$
+tj.przekszta³cenia jest tzw. \textit{macierz¹ trójk¹tn¹}.³atwo sprawdziæ, ¿e macierz przekszta³cania bazy bêdzie w tym przypadku tak¿e macierz¹ trójk¹tn¹ postaci
+$$e_1=d_{11}f_1,$$
+$$e_2=d_{21}f_1+d_{22}f_2,$$
+$$...................$$
+$$e_n=d_{n1}f_1+d_{n2}f_n+...+d_{nn}f_n .$$
+Tutaj $d_{\alpha \beta}$ jest dope³nieniem algebraicznym elementu $c_{\alfa \beta}$ macierzy $[c_{ik}]$ podzielonym przez wyznacznik tej macierzy.
+\\
+
+\textbf{\S 6. SPROWADZANIE FORMY KWADRATOWEJ DO SUMY KWADRATÓW ZA POMOC¥ PRZEKSZTA£CENIA TRÓJK¥TNEGO}
+\\
+1. W tym paragrafie podamy jeszcze jeden sposób konstruowania bazy, w której forma kwadratowa sprowadza siê do sumy kwadratów. W odró¿nieniu od poprzedniego paragrafu podamy wzory wyra¿aj¹ce szukan¹ bazê $ e_1,e_2,...,e_n$ bezpoœrenio przez bazê wyjœciow¹ (a nie jak w kilku krokach, jak w \S 5).
+   Bêdziemy jednak przy tym musieli na³o¿yæ na formê $A(x;y)$ i na szukan¹ bazê $f_1,f_2,...,f_n$ nastêpuj¹ce ograniczenie: Niech $[a_{ik}]$ bêdzie macierz¹ formy dwuliniowej $A(x;y)$ w bazie $f_1,f_2,...,f_n$. Za³o¿ymy, ¿e nastêpuj¹ce minory macierzy $[a_{ik}]$ s¹ ró¿ne od zera$(^1)$:
+
+
+
+\end{document}
+
